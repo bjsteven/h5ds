@@ -182,6 +182,7 @@ export default class EditorSet extends Component {
   async loadFontFamily(n) {
     this.setState({ fontLoading: true });
     await loadFont(n).then(d => {
+      console.log(d, '// steven dddddddddddd');
       //设置字体
       let { style, fontFamilySet } = this.state;
       style.fontFamily = d; // 字体名字不会变化的

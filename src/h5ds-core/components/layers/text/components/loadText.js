@@ -4,6 +4,7 @@ import { message } from 'antd';
 // 加载字体
 export const loadFont = name => {
   return new Promise((resolve, reject) => {
+    console.log(name, '// steven name');
     let { url } = fontFamilyData.find(d => d.name === name) || {};
     // const { style } = this.state;
     if (url) {
